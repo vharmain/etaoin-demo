@@ -1,0 +1,9 @@
+version: '2'
+services:
+  headless-chrome:
+    image: robcherry/docker-chromedriver
+    privileged: true
+    environment:
+      CHROMEDRIVER_WHITELISTED_IPS: '' # Allow any source
+    ports:
+      - '4444:4444'
